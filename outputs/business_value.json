@@ -1,0 +1,25 @@
+{
+  "status": "Hypothetical scenario, not measured value or a clinical outcome",
+  "assumptions": {
+    "monthly_users": 100,
+    "generic_information_navigation_minutes": 5.0,
+    "enhanced_information_navigation_minutes": 3.0,
+    "future_group_mix_matches_training_sample": true,
+    "status": "Hypothetical classroom assumptions, not measured benefits or clinical outcomes"
+  },
+  "enhanced_information_training_users": 3,
+  "training_users": 29,
+  "enhanced_information_share": 0.10344827586206896,
+  "expected_enhanced_information_users_per_month": 10.344827586206897,
+  "baseline_monthly_navigation_minutes": 500.0,
+  "model_monthly_navigation_minutes": 479.3103448275863,
+  "assumed_monthly_navigation_minutes_saved": 20.689655172413723,
+  "assumed_minutes_saved_per_enhanced_user": 2.0,
+  "calculation": "Monthly users \u00d7 training share assigned enhanced information \u00d7 (generic minutes \u2212 enhanced minutes)",
+  "not_measured": [
+    "Actual time savings",
+    "Treatment effects",
+    "Quality-of-life improvement",
+    "Avoided eye disease"
+  ]
+}

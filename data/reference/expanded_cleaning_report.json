@@ -1,0 +1,127 @@
+{
+  "status": "Data preparation only; no model, imputation, or risk labels fitted",
+  "source": "CDC NHANES 2007-2008 public-use participant records",
+  "rows": 29,
+  "core_inputs": [
+    "age_years",
+    "sex_recorded",
+    "diabetes_duration_years",
+    "hba1c_pct",
+    "systolic_bp_mmhg"
+  ],
+  "optional_inputs": [
+    "diastolic_bp_mmhg",
+    "bmi_kg_m2",
+    "smoking_status",
+    "insulin_use",
+    "diabetes_pill_use"
+  ],
+  "core_observed_cells": 145,
+  "core_missing_cells": 0,
+  "all_input_observed_cells": 290,
+  "all_input_missing_cells": 0,
+  "imputed_cells": 0,
+  "original_participants_retained": 16,
+  "participants_added": 13,
+  "expansion_random_state": 43,
+  "sampling": "Preserve original 16 and add 13 without replacement from the remaining 423 assessed participants; no balancing by retinal result or filtering by optional-field completeness",
+  "full_complete_input_pool_rows": 512,
+  "assessed_pool_rows": 439,
+  "selected_source_seqn": [
+    42074,
+    42900,
+    43019,
+    43520,
+    43523,
+    43533,
+    43597,
+    45997,
+    46470,
+    46570,
+    46807,
+    47069,
+    47335,
+    47380,
+    47505,
+    47567,
+    48068,
+    48223,
+    48765,
+    49150,
+    49193,
+    49595,
+    49664,
+    49670,
+    50679,
+    50703,
+    50974,
+    51576,
+    51616
+  ],
+  "added_source_seqn": [
+    42074,
+    42900,
+    43019,
+    46470,
+    47069,
+    47380,
+    47505,
+    48068,
+    48765,
+    49193,
+    49664,
+    50679,
+    51616
+  ],
+  "duplicate_ids": 0,
+  "recorded_sex_counts": {
+    "Male": 19,
+    "Female": 10
+  },
+  "retinopathy_counts": {
+    "no": 22,
+    "yes": 7
+  },
+  "numeric_ranges": {
+    "age_years": {
+      "min": 46.0,
+      "max": 78.0
+    },
+    "diabetes_duration_years": {
+      "min": 0.0,
+      "max": 35.0
+    },
+    "hba1c_pct": {
+      "min": 5.3,
+      "max": 12.1
+    },
+    "systolic_bp_mmhg": {
+      "min": 101.333333333,
+      "max": 170.0
+    },
+    "diastolic_bp_mmhg": {
+      "min": 31.333333333333332,
+      "max": 95.33333333333333
+    },
+    "bmi_kg_m2": {
+      "min": 21.63,
+      "max": 63.95
+    }
+  },
+  "assignment_split_rule": {
+    "requirement": "under 30 data points",
+    "no_split_maximum": 29,
+    "current_rows": 29,
+    "held_out_test_results": "not available"
+  },
+  "scope": [
+    "Declare this a 29-person demonstration subset of a larger dataset.",
+    "The earlier 16 people's three measurements are preserved unchanged.",
+    "All available fields for the same person are linked by public source ID.",
+    "The source contains only two recorded sex/gender categories, not all gender identities.",
+    "Optional-field availability does not prove additional eye-risk usefulness.",
+    "Retinal outcomes, identifiers, and survey weights are excluded from model inputs.",
+    "Age scope is 40-79; diabetes type is unverified; future quality-of-life decline is not measured.",
+    "This is not a nationally representative sample or calibrated individual risk model."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "observation_count": 29,
+  "training_rows": 29,
+  "test_rows": 0,
+  "split_rule": "Under 30: use all rows and skip the test split",
+  "test_evaluation_status": "Not available under the assignment's under-30 exception",
+  "chosen_k": 3,
+  "elbow_selection": {
+    "selected_k": 3,
+    "method": "Largest gap below the endpoint chord on normalized training SSE; inspect the elbow visually.",
+    "near_tie_tolerance": 0.02,
+    "near_tie_candidates": [
+      3,
+      4
+    ],
+    "warning": "Several elbow candidates are close; k is a descriptive design choice, not a clinically validated number of risk levels."
+  },
+  "baseline_train_sse": 122.55172413793105,
+  "model_train_sse": 69.76547386073129,
+  "training_sse_reduction_pct": 43.07262965781634,
+  "baseline_train_rms_distance": 2.0557046290743286,
+  "model_train_rms_distance": 1.5510338472121203,
+  "model_train_silhouette": 0.23157348759323104,
+  "baseline_test_sse": null,
+  "model_test_sse": null,
+  "test_elbow_k": null,
+  "train_test_elbow_agreement": null,
+  "smallest_training_cluster": 3,
+  "recorded_category_sensitivity_ari": 0.7529975411290527,
+  "random_seed_sensitivity": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "adjusted_rand_indices": [
+      1.0,
+      0.870920975659384,
+      0.870920975659384,
+      0.870920975659384,
+      0.870920975659384
+    ],
+    "minimum_ari": 0.870920975659384
+  },
+  "metric_meaning": "Distances are in the five-coordinate encoded/scaled space. SSE reduction is not medical accuracy, risk reduction, quality-of-life improvement, or evidence of held-out performance.",
+  "retinal_summary_meaning": "Post-fit, unweighted descriptive counts of existing findings. These are not future-risk estimates or a held-out validation set."
+}

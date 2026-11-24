@@ -1,0 +1,11 @@
+field,observed_in_29,missing_in_29,observed_in_512,missing_in_512,imputed
+age_years,29,0,512,0,0
+sex_recorded,29,0,512,0,0
+diabetes_duration_years,29,0,512,0,0
+hba1c_pct,29,0,512,0,0
+systolic_bp_mmhg,29,0,512,0,0
+diastolic_bp_mmhg,29,0,512,0,0
+bmi_kg_m2,29,0,496,16,0
+smoking_status,29,0,511,1,0
+insulin_use,29,0,512,0,0
+diabetes_pill_use,29,0,511,1,0

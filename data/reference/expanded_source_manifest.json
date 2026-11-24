@@ -1,0 +1,51 @@
+[
+  {
+    "file": "BMX_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BMX_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BMX_E.htm",
+    "bytes": 1800240,
+    "sha256": "b67b50dbd12c9510b49b6348b595b9fd073c422c0c6eac182f90ac57b491a97d"
+  },
+  {
+    "file": "BPX_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BPX_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BPX_E.htm",
+    "bytes": 2113200,
+    "sha256": "5a0303e68e0a4d7ebdbd2bc82f87852c31e44f1733782e107219bed9303baed5"
+  },
+  {
+    "file": "DEMO_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DEMO_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DEMO_E.htm",
+    "bytes": 3498080,
+    "sha256": "02b8e97703d04bc99769c751881bece51ac9ba68cf18a2992a45d3bdfb856147"
+  },
+  {
+    "file": "DIQ_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DIQ_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DIQ_E.htm",
+    "bytes": 2789600,
+    "sha256": "fb4d698fbec26bc8a09b2cd0f3019f815114742dd2c37ccac1aaf5e0123394c5"
+  },
+  {
+    "file": "GHB_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/GHB_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/GHB_E.htm",
+    "bytes": 111760,
+    "sha256": "4c0311851825e9e0352c58af193c58d8f7a3af613aa5f522893e3c8f83e53a53"
+  },
+  {
+    "file": "OPXRET_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/OPXRET_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/OPXRET_E.htm",
+    "bytes": 6892560,
+    "sha256": "98c265233382a28f90fd88449dc0f6a11da9b2831e3ced378bd094f12f2fcb7a"
+  },
+  {
+    "file": "SMQ_E.xpt",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/SMQ_E.xpt",
+    "codebook": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/SMQ_E.htm",
+    "bytes": 2449520,
+    "sha256": "881865ee05f4b2be0c03c761f00ad8e355f2cc5e7d3be41666edef6f3dca5862"
+  }
+]

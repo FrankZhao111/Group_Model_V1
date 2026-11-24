@@ -1,0 +1,26 @@
+{
+  "python_workflow": "run_model.py",
+  "data_sha256": "159065bb89b321ae9a186d223df39c02d6152845e88ee8e5af5de78deaec37f6",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.8.0",
+  "config": {
+    "data_file": "CareCompass_EyeRisk_29_Patients.csv",
+    "reference_file": "data/reference/patient_provenance_29.csv",
+    "output_directory": "outputs",
+    "random_state": 42,
+    "n_init": 50,
+    "maximum_k": 6,
+    "elbow_near_tie_tolerance": 0.02,
+    "sex_indicator_weight": 1.0,
+    "example_file": "examples/new_user.json",
+    "business_assumptions": {
+      "monthly_users": 100,
+      "generic_information_navigation_minutes": 5.0,
+      "enhanced_information_navigation_minutes": 3.0,
+      "future_group_mix_matches_training_sample": true,
+      "status": "Hypothetical classroom assumptions, not measured benefits or clinical outcomes"
+    }
+  },
+  "charts_generated": true
+}

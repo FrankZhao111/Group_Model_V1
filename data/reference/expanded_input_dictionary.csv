@@ -1,0 +1,11 @@
+field,role,type,unit_or_categories,user_question,source_and_interpretation,observed_of_29,missing_of_29,imputed_of_29
+age_years,core,numeric,years,How old are you?,DEMO_E.RIDAGEYR,29,0,0
+sex_recorded,core; compare with/without this category,categorical,Male/Female,What is your sex/gender as recorded in your health record?,"DEMO_E.RIAGENDR; source labels this Gender; 1=Male, 2=Female",29,0,0
+diabetes_duration_years,core,numeric,years,How many years ago were you first diagnosed with diabetes?,RIDAGEYR minus DIQ_E.DID040,29,0,0
+hba1c_pct,core,numeric,%,"What is your latest HbA1c result, in percent?",GHB_E.LBXGH,29,0,0
+systolic_bp_mmhg,core,numeric,mmHg,What is your recent average blood pressure's top number?,"Mean of observed valid BPXSY1-3, at least two readings",29,0,0
+diastolic_bp_mmhg,optional; correlated with systolic pressure,numeric,mmHg,What is your recent average blood pressure's bottom number?,"Mean of observed valid BPXDI1-3, at least two readings; source zero is valid",29,0,0
+bmi_kg_m2,optional,numeric,kg/m2,"What are your height and weight, or your recorded BMI?",BMX_E.BMXBMI; do not also add height and weight to inflate dimensions,29,0,0
+smoking_status,optional,categorical,Current/Former/Never (<100 lifetime cigarettes),"Have you smoked at least 100 lifetime cigarettes, and do you currently smoke?",SMQ020=2: Never; SMQ020=1 and SMQ040=3: Former; SMQ020=1 and SMQ040=1/2: Current,29,0,0
+insulin_use,optional treatment context,categorical,Yes/No,Do you currently use insulin?,"DIQ050: 1=Yes, 2=No; association does not imply treatment causes eye disease",29,0,0
+diabetes_pill_use,optional treatment context,categorical,Yes/No,Do you currently take pills to lower blood glucose?,"DID070: 1=Yes, 2=No; 7/9/blank are missing, not No",29,0,0

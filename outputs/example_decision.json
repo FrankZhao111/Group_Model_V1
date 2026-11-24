@@ -1,0 +1,24 @@
+{
+  "input": {
+    "age_years": 60.0,
+    "diabetes_duration_years": 20.0,
+    "hba1c_pct": 10.5,
+    "systolic_bp_mmhg": 145.0,
+    "sex_recorded": "Female"
+  },
+  "segment_id": "G3",
+  "raw_cluster_id": 0,
+  "relative_burden_tier": "Higher",
+  "profile_label": "Higher relative risk-factor burden",
+  "decision": "Enhanced eye-health information",
+  "baseline_decision": "Standard eye-health information",
+  "distance_to_center": 1.307720617908012,
+  "nearest_group_mean_values": {
+    "age_years": 60.666666666666664,
+    "diabetes_duration_years": 18.333333333333332,
+    "hba1c_pct": 11.0,
+    "systolic_bp_mmhg": 126.44444444466666
+  },
+  "outside_observed_training_ranges": [],
+  "interpretation": "Exploratory relative risk-factor burden, not a diagnosis, a future disease probability, a measured quality-of-life score, or a decision to withhold eye care."
+}

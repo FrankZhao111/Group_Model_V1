@@ -1,0 +1,4 @@
+split,segment_id,assessed_count,observed_retinopathy_count,observed_retinopathy_pct
+train,G1,13,1,7.6923076923076925
+train,G2,13,4,30.76923076923077
+train,G3,3,2,66.66666666666667

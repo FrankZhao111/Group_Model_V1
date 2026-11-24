@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "model_family": "KMeans",
+  "selected_k": 3,
+  "training_rows": 29,
+  "preprocessing": {
+    "numeric_features": [
+      "age_years",
+      "diabetes_duration_years",
+      "hba1c_pct",
+      "systolic_bp_mmhg"
+    ],
+    "mean": [
+      62.55172413793103,
+      9.689655172413794,
+      7.065517241379312,
+      128.32183908044829
+    ],
+    "scale": [
+      7.950650404522551,
+      8.867233165933158,
+      1.5045393067530015,
+      17.589286786155863
+    ],
+    "sex_encoding": {
+      "Female": 0.0,
+      "Male": 1.0
+    },
+    "sex_indicator_weight": 1.0,
+    "coordinate_order": [
+      "age_years",
+      "diabetes_duration_years",
+      "hba1c_pct",
+      "systolic_bp_mmhg",
+      "sex_recorded_male"
+    ],
+    "note": "The four continuous fields are standardized with training statistics; the weighted 0/1 category indicator is not standardized."
+  },
+  "centers": [
+    [
+      -0.23709475015931933,
+      0.9747886402860716,
+      2.615074754751228,
+      -0.10673511999697892,
+      0.6666666666666666
+    ],
+    [
+      -0.5531469452591253,
+      -0.6156244952052174,
+      -0.2480556987753654,
+      -0.6393048302818483,
+      0.6153846153846154
+    ],
+    [
+      0.6078611183728151,
+      0.39067327052381623,
+      -0.35542309078261264,
+      0.6639360118196114,
+      0.6923076923076923
+    ]
+  ],
+  "profiles": [
+    {
+      "segment_id": "G1",
+      "raw_cluster_id": 1,
+      "count": 13,
+      "burden_tier": "Lower",
+      "profile_label": "Lower relative risk-factor burden",
+      "descriptive_burden_index": -0.500995008087477,
+      "information_package": "Standard eye-health information",
+      "male_share_pct": 61.53846153846154,
+      "within_group_rms_distance": 1.4662432584573104,
+      "age_years_mean": 58.15384615384615,
+      "age_years_sd": 7.7145831319267195,
+      "diabetes_duration_years_mean": 4.230769230769231,
+      "diabetes_duration_years_sd": 4.593538039025728,
+      "hba1c_pct_mean": 6.692307692307692,
+      "hba1c_pct_sd": 0.5797367286589774,
+      "systolic_bp_mmhg_mean": 117.07692307684614,
+      "systolic_bp_mmhg_sd": 13.10193686092965
+    },
+    {
+      "segment_id": "G2",
+      "raw_cluster_id": 2,
+      "count": 13,
+      "burden_tier": "Middle",
+      "profile_label": "Middle relative risk-factor burden",
+      "descriptive_burden_index": 0.23306206385360498,
+      "information_package": "Standard eye-health information",
+      "male_share_pct": 69.23076923076923,
+      "within_group_rms_distance": 1.5681690120401481,
+      "age_years_mean": 67.38461538461539,
+      "age_years_sd": 5.83805106492624,
+      "diabetes_duration_years_mean": 13.153846153846153,
+      "diabetes_duration_years_sd": 7.7046055541839475,
+      "hba1c_pct_mean": 6.5307692307692315,
+      "hba1c_pct_sd": 0.6614490100524819,
+      "systolic_bp_mmhg_mean": 140.0,
+      "systolic_bp_mmhg_sd": 15.321065326353557
+    },
+    {
+      "segment_id": "G3",
+      "raw_cluster_id": 0,
+      "count": 3,
+      "burden_tier": "Higher",
+      "profile_label": "Higher relative risk-factor burden",
+      "descriptive_burden_index": 1.1610427583467735,
+      "information_package": "Enhanced eye-health information",
+      "male_share_pct": 66.66666666666666,
+      "within_group_rms_distance": 1.8118287628712766,
+      "age_years_mean": 60.666666666666664,
+      "age_years_sd": 4.109609335312651,
+      "diabetes_duration_years_mean": 18.333333333333332,
+      "diabetes_duration_years_sd": 12.47219128924647,
+      "hba1c_pct_mean": 11.0,
+      "hba1c_pct_sd": 1.098483803552272,
+      "systolic_bp_mmhg_mean": 126.44444444466666,
+      "systolic_bp_mmhg_sd": 9.338622839880125
+    }
+  ],
+  "training_ranges": {
+    "age_years": {
+      "min": 46.0,
+      "max": 78.0
+    },
+    "diabetes_duration_years": {
+      "min": 0.0,
+      "max": 35.0
+    },
+    "hba1c_pct": {
+      "min": 5.3,
+      "max": 12.1
+    },
+    "systolic_bp_mmhg": {
+      "min": 101.333333333,
+      "max": 170.0
+    }
+  },
+  "k_selection": {
+    "selected_k": 3,
+    "method": "Largest gap below the endpoint chord on normalized training SSE; inspect the elbow visually.",
+    "near_tie_tolerance": 0.02,
+    "near_tie_candidates": [
+      3,
+      4
+    ],
+    "warning": "Several elbow candidates are close; k is a descriptive design choice, not a clinically validated number of risk levels."
+  },
+  "risk_interpretation": "Exploratory relative risk-factor burden, not a diagnosis, a future disease probability, a measured quality-of-life score, or a decision to withhold eye care.",
+  "burden_ordering": "Equal-weight average of the standardized cluster means for diabetes duration, HbA1c, and systolic BP; age and recorded sex/gender are not assigned ordinal medical-risk weights.",
+  "random_state": 42,
+  "n_init": 50
+}
